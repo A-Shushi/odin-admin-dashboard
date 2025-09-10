@@ -171,4 +171,30 @@ button {
 
 .main-container {
     background-color: #e2e8f0;
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "projects announcements"
+    "projects trending";
+    gap: 1.5rem;
+    padding: 1.5rem;
+}
+
+.projects-container {
+    grid-area: projects;
+    background-color: white;
+    /*TODO: Remove BGC*/
+}
+
+.announcements-container {
+    grid-area: announcements;
+    background-color: white;
+    /*TODO: Remove BGC*/
+}
+
+.trending-container {
+    grid-area: trending;
+    background-color: white;
+    /*TODO: Remove BGC*/
 }
