@@ -78,8 +78,8 @@ body {
 .header {
     display: grid;
     grid-template-rows: 1fr 2fr;
-    padding: 1rem 3rem;
-    gap: 2rem;
+    padding: 1rem 3rem 0.25rem;
+    gap: 1rem;
     min-width: 800px;
     position: relative;
     z-index: 10;
@@ -91,7 +91,7 @@ body {
     display: grid;
     grid-template-columns: 2fr 1fr;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .search-bar {
@@ -104,7 +104,7 @@ body {
 input[type="search"],
 button {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 20px;
     border: none;
     background-color: #e2e8f0;
@@ -113,10 +113,14 @@ button {
 
 .top-right-header {
     display: grid;
-    grid-template-columns: auto auto minmax(140px, 1fr);
+    grid-template-columns: auto auto minmax(120px, 1fr);
     align-items: center;
     margin-left: auto;
     font-weight: bold;
+}
+
+.top-right-header > i {
+    font-size: 1.5rem;
 }
 
 .header-top,
@@ -125,7 +129,7 @@ button {
 }
 
 .mini-avatar {
-    width: 50px;
+    width: 40px;
     border-radius: 50%;
 }
 
@@ -133,28 +137,28 @@ button {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     font-weight: bold;
 }
 
 .main-avatar {
-    width: 75px;
+    width: 60px;
     border-radius: 50%;
 }
 
 .welcome-text {
-    font-size: 1rem;
+    font-size: 0.75rem;
     margin-bottom: 0.5rem;
 }
 
 .username-handle {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 .header-bottom-right {
     display: grid;
     grid-template-columns: repeat(3, minmax(100px, 1fr));
-    gap: 2rem;
+    gap: 1.5rem;
 }
 
 button {
@@ -162,7 +166,7 @@ button {
     color: white;
     font-weight: bold;
     font-size: 1rem;
-    padding: 0.75rem;
+    padding: 0.5rem;
 }
 
 .main-container {
